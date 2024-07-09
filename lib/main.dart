@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:permission/firebase_options.dart';
 import 'package:permission/views/screens/home_screen.dart';
+import 'package:permission/views/screens/maps_screen.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main(List<String> args) async {
@@ -40,7 +41,7 @@ class MainRunner extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: MapsScreen(),
     );
   }
 }
